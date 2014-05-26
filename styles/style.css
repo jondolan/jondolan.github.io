@@ -1,0 +1,217 @@
+@font-face 
+	{
+        font-family: "Signature";
+        font-style: normal;
+        src: url("Signature.ttf") format("truetype"); /* non-IE */
+	}
+	@font-face 
+	{
+        font-family: "Smooth";
+        font-style: normal;
+        src: url("Smoth-Bight.otf");
+	}
+		
+	html
+	{
+		overflow-y: scroll;
+		height: 100%;
+	}
+	body
+	{
+		background-color: #2B1B17;
+		text-align: center;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		font-family: Signature;
+	}
+	#wrap
+	{
+		height: 80%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 10%;
+	}
+	#float
+	{
+		float: left;
+		height: 50%;
+		margin-bottom: -225px;
+		width: 100%;
+	}
+	#container
+	{
+		height: 550px;
+		width: 550px;
+		border-radius: 50%;
+		clear: both;
+		margin: auto;
+		overflow: hidden;
+		position: relative;
+	}
+	#circle
+	{
+		background-color: #3BB9FF;
+		color: #F0F8FF;
+		border-radius: 50%;
+		height: 400px;
+		width: 400px;
+		margin: auto;
+		position: relative;
+		top: 75px;
+		overflow: hidden;
+		overflow-y: hidden;
+		background-image: url(../images/me.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 0px 110px;
+	}
+	#text
+	{
+		padding-top: 8px;
+		overflow: hidden;
+		padding: 10% 8% 0 8%;
+		word-wrap: break-word;
+		border-radius: 50%;
+	}
+	#text h1
+	{
+		margin-top: 0;
+		margin-bottom: 8px;
+		font-size: 3em;
+	}
+	.button-container
+	{
+		height: 275px;
+		width: 80px;
+		position: absolute;
+		left: 235px;
+		top: 0;
+		z-index: 2;
+		-webkit-transform-origin: bottom;
+		transform-origin: bottom;
+		-ms-transform-origin: bottom;
+	}
+	#test1-container
+	{
+		-webkit-transform: rotate(-50deg);
+		transform: rotate(-50deg);
+		-ms-transform:rotate(-50deg);
+	}
+	#test2-container
+	{
+		-webkit-transform: rotate(-25deg);
+		transform: rotate(-25deg);
+		-ms-transform: rotate(-25deg);
+	}
+	#test3-container
+	{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+	}
+	#test4-container
+	{
+		-webkit-transform: rotate(25deg);
+		transform: rotate(25deg);
+		-ms-transform: rotate(25deg);
+	}
+	#test5-container
+	{
+		-webkit-transform: rotate(50deg);
+		transform: rotate(50deg);
+		-ms-transform: rotate(50deg);
+	}
+	.button
+	{
+		background-color: #3BB9FF;
+		width: 70px;
+		height: 70px;
+		margin: auto;
+		border-radius: 50%;
+		z-index: 100;
+		position: relative;
+	}
+	.button:hover
+	{
+		-webkit-animation-name: wiggle;
+		-webkit-animation-duration: .2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: ease;
+		-o-animation-name: wiggle;
+		-o-animation-duration: .2s;
+		-o-animation-iteration-count: infinite;
+		-o-animation-timing-function: ease;
+		animation-name: wiggle;
+		animation-duration: .2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease;
+	}
+	#test1-button img
+	{
+		height: 60%;
+		position: relative;
+		top: 20%;
+	}
+	#test2-button img
+	{
+		height: 80%;
+		position: relative;
+		top: 10%;
+	}
+	#test3-button img
+	{
+		height: 80%;
+		position: relative;
+		top: 6%;
+	}
+	#test4-button img
+	{
+		height: 90%;
+		position: relative;
+		top: 5%;
+		left: 1%;
+	}
+	#test5-button img
+	{
+		height: 80%;
+		position: relative;
+		left: -12%;
+		top: 9%;
+	}
+	@-webkit-keyframes wiggle {
+		from {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg);}
+		50% {-webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); -ms-transform: rotateZ(-2deg);}
+		to {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg);}
+	}
+	@keyframes wiggle {
+		from {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg);}
+		50% {-webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); -ms-transform: rotateZ(-2deg);}
+		to {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg);}
+	}
+	@-o-keyframes wiggle {
+		from {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg); -o-transform: rotateZ(2deg);}
+		50% {-webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); -ms-transform: rotateZ(-2deg); -o-transform: rotateZ(-2deg);}
+		to {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg); -o-transform: rotateZ(2deg);}
+	}
+	#about
+	{
+		position: relative;
+		top: 20px;
+		display: none;
+		font-family: Smooth;
+		font-size: 2em;
+		margin-left: 12px;
+	}
+	#mouseout
+	{
+		height: 400px;
+		width: 400px;
+		background-color: transparent;
+		position: absolute;
+		z-index: 2;
+		top: 75px;
+		left: 75px;
+		border-radius: 50%;
+	}
