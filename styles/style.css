@@ -229,4 +229,8 @@ body
 		display: block;
 		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 	}
+	#float
+	{
+		margin-bottom: -220px;
+	}
 }
