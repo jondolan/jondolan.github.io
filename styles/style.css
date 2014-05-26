@@ -221,6 +221,7 @@ body
 	position: absolute;
 	top: 5px;
 	left: 2px;
+	font-size: .8em;
 }
 @media screen and (max-width: 570px)
 {
