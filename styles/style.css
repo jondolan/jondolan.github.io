@@ -6,9 +6,9 @@
 	}
 	@font-face 
 	{
-        font-family: "Smooth";
+        font-family: "Cringes";
         font-style: normal;
-        src: url("Smoth-Bight.otf");
+        src: url("cringes.ttf") format("truetype");
 	}
 		
 	html
@@ -197,12 +197,12 @@
 	}
 	#about
 	{
-		position: relative;
-		top: 20px;
+		position: absolute;
+		bottom: 20px;
 		display: none;
-		font-family: Smooth;
-		font-size: 2em;
-		margin-left: 12px;
+		font-family: Cringes;
+		font-size: 1.8em;
+		margin-left: 13px;
 	}
 	#mouseout
 	{
