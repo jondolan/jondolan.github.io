@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name = "viewport" content = "user-scalable=no, width=device-width">
+	<meta name = "viewport" content = "initial-scale=1; user-scalable=no;">
 	<meta name="description" content="Jon Dolan is a high school student who programs and runs for fun!">
 	<meta name="keywords" content="Jon, Dolan, Jon Dolan">
 	<meta http-equiv="content-language" content="en">
@@ -20,7 +20,6 @@
 </head>
 
 <body>
-<div id = "mobile">Hey there (potentially) mobile user! A version for smaller screens is in the works, school's crazy right now!</div>
 <div id = "wrap">
 	<div id = "float"></div>
 	<div id = "container">
@@ -49,8 +48,9 @@
 			<a href = "mailto:jondolan33@gmail.com?subject=Hey Jon, I saw your website!" title="Get in touch!"><img src = "images/email.png"></img></a>
 		</div>
 	</span>
-	<div id = "mouseout" onmouseover = "moveDown(document.getElementById('circle'));" onmouseout = "moveUp(document.getElementById('circle'))"></div>
+	<div id = "mouseout" ontouchstart="touchStart(event,'mouseout');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);" onmouseover = "moveDown(document.getElementById('image'));" onmouseout = "moveUp(document.getElementById('image'))"></div>
 	<div id = "circle">
+		<div id = "image"></div>
 		<div id = "text">
 			<h1>Jon Dolan</h1>
 		</div>
