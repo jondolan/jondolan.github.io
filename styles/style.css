@@ -10,7 +10,6 @@
 	font-style: normal;
 	src: url("cringes.ttf") format("truetype");
 }
-	
 html
 {
 	overflow-y: scroll;
@@ -51,6 +50,17 @@ body
 	overflow: hidden;
 	position: relative;
 }
+#mouseout
+{
+	height: 400px;
+	width: 400px;
+	background-color: transparent;
+	position: absolute;
+	z-index: 2;
+	top: 75px;
+	left: 75px;
+	border-radius: 50%;
+}
 #circle
 {
 	background-color: #3BB9FF;
@@ -81,6 +91,15 @@ body
 	margin-bottom: 8px;
 	font-size: 3em;
 }
+#about
+{
+	position: absolute;
+	bottom: 20px;
+	display: none;
+	font-family: Cringes;
+	font-size: 1.8em;
+	margin-left: 15px;
+}
 .button-container
 {
 	height: 275px;
@@ -93,35 +112,68 @@ body
 	transform-origin: bottom;
 	-ms-transform-origin: bottom;
 }
-#test1-container
+#twitter-container
 {
 	-webkit-transform: rotate(-50deg);
 	transform: rotate(-50deg);
 	-ms-transform:rotate(-50deg);
 }
-#test2-container
+#github-container
 {
 	-webkit-transform: rotate(-25deg);
 	transform: rotate(-25deg);
 	-ms-transform: rotate(-25deg);
 }
-#test3-container
+#robotics-container
 {
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
 	-ms-transform: rotate(0deg);
 }
-#test4-container
+#five-container
 {
 	-webkit-transform: rotate(25deg);
 	transform: rotate(25deg);
 	-ms-transform: rotate(25deg);
 }
-#test5-container
+#email-container
 {
 	-webkit-transform: rotate(50deg);
 	transform: rotate(50deg);
 	-ms-transform: rotate(50deg);
+}
+#twitter-button img
+{
+	height: 60%;
+	position: relative;
+	top: 20%;
+}
+#github-button img
+{
+	height: 80%;
+	position: relative;
+	top: 10%;
+}
+#robotics-button img
+{
+	height: 80%;
+	position: relative;
+	top: 6%;
+	right: .5%;
+}
+#five-button img
+{
+	height: 90%;
+	position: relative;
+	top: 5%;
+	left: 1%;
+}
+#email-button img
+{
+	height: 80%;
+	position: relative;
+	left: -12%;
+	top: 9%;
 }
 .button
 {
@@ -148,38 +200,6 @@ body
 	animation-iteration-count: infinite;
 	animation-timing-function: ease;
 }
-#test1-button img
-{
-	height: 60%;
-	position: relative;
-	top: 20%;
-}
-#test2-button img
-{
-	height: 80%;
-	position: relative;
-	top: 10%;
-}
-#test3-button img
-{
-	height: 80%;
-	position: relative;
-	top: 6%;
-}
-#test4-button img
-{
-	height: 90%;
-	position: relative;
-	top: 5%;
-	left: 1%;
-}
-#test5-button img
-{
-	height: 80%;
-	position: relative;
-	left: -12%;
-	top: 9%;
-}
 @-webkit-keyframes wiggle {
 	from {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg);}
 	50% {-webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); -ms-transform: rotateZ(-2deg);}
@@ -195,26 +215,7 @@ body
 	50% {-webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); -ms-transform: rotateZ(-2deg); -o-transform: rotateZ(-2deg);}
 	to {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg); -o-transform: rotateZ(2deg);}
 }
-#about
-{
-	position: absolute;
-	bottom: 20px;
-	display: none;
-	font-family: Cringes;
-	font-size: 1.8em;
-	margin-left: 15px;
-}
-#mouseout
-{
-	height: 400px;
-	width: 400px;
-	background-color: transparent;
-	position: absolute;
-	z-index: 2;
-	top: 75px;
-	left: 75px;
-	border-radius: 50%;
-}
+
 #mobile
 {
 	display: none;
