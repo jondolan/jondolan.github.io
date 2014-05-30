@@ -45,6 +45,7 @@ body
 	height: 550px;
 	width: 550px;
 	border-radius: 50%;
+	-moz-border-radius: 50%;
 	clear: both;
 	margin: auto;
 	overflow: hidden;
@@ -62,11 +63,13 @@ body
 	top: 75px;
 	left: 75px;
 	border-radius: 50%;
+	-moz-border-radius: 50%;
 }
 #circle
 {
 	background-color: #3BB9FF;
 	border-radius: 50%;
+	-moz-border-radius: 50%;
 	height: 400px;
 	width: 400px;
 	margin: auto;
@@ -92,6 +95,7 @@ body
 	padding: 10% 8% 0 8%;
 	word-wrap: break-word;
 	border-radius: 50%;
+	-moz-border-radius: 50%;
 }
 #text h1
 {
@@ -192,6 +196,7 @@ body
 	height: 70px;
 	margin: auto;
 	border-radius: 50%;
+	-moz-border-radius: 50%; 
 	z-index: 100;
 	position: relative;
 }
@@ -313,7 +318,7 @@ body
 	{
 		height: 80%;
 		position: relative;
-		left: -14%;
+		right: 15%;
 		top: 11%;
 	}
 	#text
