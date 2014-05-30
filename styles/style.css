@@ -182,8 +182,8 @@ body
 {
 	height: 80%;
 	position: relative;
-	left: -12%;
-	top: 9%;
+	left: -12.5%;
+	top: 10%;
 }
 .button
 {
@@ -308,6 +308,13 @@ body
 		-webkit-transform: rotate(37deg);
 		transform: rotate(37deg);
 		-ms-transform: rotate(37deg);
+	}
+	#email-button img
+	{
+		height: 80%;
+		position: relative;
+		left: -14%;
+		top: 11%;
 	}
 	#text
 	{
