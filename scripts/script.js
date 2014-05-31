@@ -1,8 +1,10 @@
 var up = true;
+var moving = false;
 function moveDown(element, bottom)
 {
 	if (up == true)
 	{
+		moving = true;
 		if (bottom == undefined)
 		{
 			if (element.style.bottom == '')
@@ -14,34 +16,35 @@ function moveDown(element, bottom)
 		{
 			document.getElementById('about').style.display = 'block';
 			up = false;
+			moving = false;
 			return;
 		}
 		element.style.bottom = bottom + 'px';
 		setTimeout(function(){ moveDown(element,bottom-8)}, 15);
 	}
-	else
+	else if (moving == true)
 		setTimeout(function(){ moveDown(element)}, 100);
 }
-function moveUp(element, bottom, upTo)
+function moveUp(element, bottom)
 {
-	if (upTo == null)
-		upTo = -10;
 	if (up == false)
 	{
+		moving = true;
 		document.getElementById('about').style.display = 'none';
 		if (parseInt(bottom) == 0 || bottom == undefined)
 			bottom = -300;
-		else if (bottom >= upTo)
+		else if (bottom >= -10)
 		{
-			element.style.bottom = upTo + 'px';
+			element.style.bottom = -10 + 'px';
 			up = true;
+			moving = false;
 			return;
 		}
 		element.style.bottom = bottom + 'px';
-		setTimeout(function(){ moveUp(element, bottom+8, upTo)}, 15);
+		setTimeout(function(){ moveUp(element, bottom+8)}, 15);
 	}
-	else
-		setTimeout(function(){ moveUp(element, 0, upTo)}, 100);
+	else if (moving == true)
+		setTimeout(function(){ moveUp(element, 0)}, 100);
 }
 // TOUCH-EVENTS SINGLE-FINGER SWIPE-SENSING JAVASCRIPT
 // Courtesy of PADILICIOUS.COM and MACOSXAUTOMATION.COM
