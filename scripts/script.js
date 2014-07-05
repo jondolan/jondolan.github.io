@@ -12,7 +12,7 @@ function moveDown(element, bottom)
 			else
 				bottom = parseInt(element.style.bottom);
 		}
-		else if (bottom <= -300)
+		else if (bottom <= -310)
 		{
 			document.getElementById('about').style.display = 'block';
 			up = false;
@@ -32,7 +32,7 @@ function moveUp(element, bottom)
 		moving = true;
 		document.getElementById('about').style.display = 'none';
 		if (parseInt(bottom) == 0 || bottom == undefined)
-			bottom = -300;
+			bottom = -310;
 		else if (bottom >= -10)
 		{
 			element.style.bottom = -10 + 'px';
