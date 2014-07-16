@@ -1,29 +1,35 @@
 var up = true;
 var moving = false;
+var first = true;
+var ANIMATION_SPEED = 5;
+var DELAY = 10;
+var RETRY_DELAY = 500;
 function moveDown(element, bottom)
 {
-	if (up == true)
-	{
+	if (up == true) {
+        if (first == true) {
+            var el = document.getElementById('mouse_over');
+            el.parentNode.removeChild(el);
+            first = false;
+        }
 		moving = true;
-		if (bottom == undefined)
-		{
+		if (bottom == undefined) {
 			if (element.style.bottom == '')
 				bottom = -10;
 			else
 				bottom = parseInt(element.style.bottom);
 		}
-		else if (bottom <= -310)
-		{
+		else if (bottom <= -310) {
 			document.getElementById('about').style.display = 'block';
 			up = false;
 			moving = false;
 			return;
 		}
 		element.style.bottom = bottom + 'px';
-		setTimeout(function(){ moveDown(element,bottom-8)}, 15);
+		setTimeout(function(){ moveDown(element,bottom-ANIMATION_SPEED)}, DELAY);
 	}
 	else if (moving == true)
-		setTimeout(function(){ moveDown(element)}, 100);
+		setTimeout(function(){ moveDown(element)}, RETRY_DELAY);
 }
 function moveUp(element, bottom)
 {
@@ -41,17 +47,14 @@ function moveUp(element, bottom)
 			return;
 		}
 		element.style.bottom = bottom + 'px';
-		setTimeout(function(){ moveUp(element, bottom+8)}, 15);
+		setTimeout(function(){ moveUp(element, bottom+ANIMATION_SPEED)}, DELAY);
 	}
 	else if (moving == true)
-		setTimeout(function(){ moveUp(element, 0)}, 100);
+		setTimeout(function(){ moveUp(element, 0)}, RETRY_DELAY);
 }
 // TOUCH-EVENTS SINGLE-FINGER SWIPE-SENSING JAVASCRIPT
 // Courtesy of PADILICIOUS.COM and MACOSXAUTOMATION.COM
-
-// this script can be used with one or more page elements to perform actions based on them being swiped with a single finger
-
-var triggerElementID = null; // this variable is used to identity the triggering element
+var triggerElementID = null;
 var fingerCount = 0;
 var startX = 0;
 var startY = 0;
@@ -61,36 +64,21 @@ var deltaX = 0;
 var deltaY = 0;
 var horzDiff = 0;
 var vertDiff = 0;
-var minLength = 72; // the shortest distance the user may swipe
+var minLength = 72;
 var swipeLength = 0;
 var swipeAngle = null;
 var swipeDirection = null;
-
-// The 4 Touch Event Handlers
-
-// NOTE: the touchStart handler should also receive the ID of the triggering element
-// make sure its ID is passed in the event call placed in the element declaration, like:
-// <div id="picture-frame" ontouchstart="touchStart(event,'picture-frame');"  ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);">
-
 function touchStart(event,passedName) {
-	// disable the standard ability to select the touched object
 	event.preventDefault();
-	// get the total number of fingers touching the screen
 	fingerCount = event.touches.length;
-	// since we're looking for a swipe (single finger) and not a gesture (multiple fingers),
-	// check that only one finger was used
 	if ( fingerCount == 1 ) {
-		// get the coordinates of the touch
 		startX = event.touches[0].pageX;
 		startY = event.touches[0].pageY;
-		// store the triggering element ID
 		triggerElementID = passedName;
 	} else {
-		// more than one finger touched so cancel
 		touchCancel(event);
 	}
 }
-
 function touchMove(event) {
 	event.preventDefault();
 	if ( event.touches.length == 1 ) {
@@ -100,14 +88,10 @@ function touchMove(event) {
 		touchCancel(event);
 	}
 }
-
 function touchEnd(event) {
 	event.preventDefault();
-	// check to see if more than one finger was used and that there is an ending coordinate
 	if ( fingerCount == 1 && curX != 0 ) {
-		// use the Distance Formula to determine the length of the swipe
 		swipeLength = Math.round(Math.sqrt(Math.pow(curX - startX,2) + Math.pow(curY - startY,2)));
-		// if the user swiped more than the minimum length, perform the appropriate action
 		if ( swipeLength >= minLength ) {
 			caluculateAngle();
 			determineSwipeDirection();
@@ -120,7 +104,6 @@ function touchEnd(event) {
 		touchCancel(event);
 	}
 }
-
 function touchCancel(event) {
 	// reset the variables back to default values
 	fingerCount = 0;
@@ -146,7 +129,6 @@ function caluculateAngle() {
 	swipeAngle = Math.round(r*180/Math.PI); //angle in degrees
 	if ( swipeAngle < 0 ) { swipeAngle =  360 - Math.abs(swipeAngle); }
 }
-
 function determineSwipeDirection() {
 	if ( (swipeAngle <= 45) && (swipeAngle >= 0) ) {
 		swipeDirection = 'left';
@@ -160,31 +142,11 @@ function determineSwipeDirection() {
 		swipeDirection = 'up';
 	}
 }
-
 function processingRoutine() {
-	var swipedElement = document.getElementById(triggerElementID);
-	if ( swipeDirection == 'left' ) {
-		// REPLACE WITH YOUR ROUTINES
-		swipedElement.style.backgroundColor = 'orange';
-	} else if ( swipeDirection == 'right' ) {
-		// REPLACE WITH YOUR ROUTINES
-		swipedElement.style.backgroundColor = 'green';
-	} else if ( swipeDirection == 'up' ) {
-		// REPLACE WITH YOUR ROUTINES
-		swipedElement.style.backgroundColor = 'maroon';
-	} else if ( swipeDirection == 'down' ) {
-		// REPLACE WITH YOUR ROUTINES
-		swipedElement.style.backgroundColor = 'purple';
-	}
+    var swipedElement = document.getElementById(triggerElementID);
+    if ( swipeDirection == 'up' ) {
+        moveUp(document.getElementById('image'));
+    } else if ( swipeDirection == 'down' ) {
+        moveDown(document.getElementById('image'));
+    }
 }
-function processingRoutine() {
-				var swipedElement = document.getElementById(triggerElementID);
-				//if ( swipeDirection == 'left' ) {
-				//} else if ( swipeDirection == 'right' ) {
-				//} else 
-				if ( swipeDirection == 'up' ) {
-					moveUp(document.getElementById('image'));
-				} else if ( swipeDirection == 'down' ) {
-					moveDown(document.getElementById('image'));
-				}
-			}

@@ -1,15 +1,5 @@
-@font-face 
-{
-	font-family: "Signature";
-	font-style: normal;
-	src: url("Signature.ttf") format("truetype"); /* non-IE */
-}
-@font-face 
-{
-	font-family: "Cringes";
-	font-style: normal;
-	src: url("cringes.ttf") format("truetype");
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 html
 {
 	overflow-y: scroll;
@@ -17,12 +7,12 @@ html
 }
 body
 {
-	background-color: #2B1B17;
+	background: #2B1B17 url("bg.png") left top repeat;
 	text-align: center;
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: Signature;
+	font-family: 'Lobster', cursive;
 	color: #F0F8FF;
 }
 #wrap
@@ -67,7 +57,7 @@ body
 }
 #circle
 {
-	background-color: #3BB9FF;
+	background: #3BB9FF;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	height: 400px;
@@ -79,7 +69,7 @@ body
 }
 #image
 {
-	background-image: url(../images/me.jpg);
+	background-image: url("../images/me.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 300px;
@@ -90,12 +80,17 @@ body
 }
 #text
 {
-	padding-top: 8px;
 	overflow: hidden;
-	padding: 10% 8% 0 8%;
+	padding: 8% 8% 0 8%;
+    margin-bottom: -2%;
 	word-wrap: break-word;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
+}
+#mouse_over
+{
+    font-family: 'Roboto Slab', serif;
+    font-size: .8em;
 }
 #text h1
 {
@@ -106,13 +101,13 @@ body
 #about
 {
 	position: absolute;
-	bottom: 15px;
+	bottom: 10px;
 	display: none;
-	font-family: Cringes;
-	font-size: 1.8em;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.3em;
 	text-align: center;
-	margin-left: 6px;
-	width: 100%;
+	width: 94%;
+    left: 4%;
 }
 .button-container
 {
@@ -230,15 +225,6 @@ body
 	50% {-webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); -ms-transform: rotateZ(-2deg); -o-transform: rotateZ(-2deg);}
 	to {-webkit-transform: rotateZ(2deg); transform: rotateZ(2deg); -ms-transform: rotateZ(2deg); -o-transform: rotateZ(2deg);}
 }
-
-#mobile
-{
-	display: none;
-	position: absolute;
-	top: 5px;
-	left: 2px;
-	font-size: .8em;
-}
 @media screen and (max-width: 570px)
 {
 	#float
@@ -323,11 +309,15 @@ body
 	}
 	#text
 	{
-		font-size: .8em;
+		font-size: .7em;
 	}
 	#about
 	{
-		font-size: 1.25em;
+		font-size: 1em;
+        width: 94%;
+        margin-left: 0;
+        left: 3.5%;
+        bottom: 2%;
 	}
 	#circle
 	{
