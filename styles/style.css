@@ -101,13 +101,13 @@ body
 #about
 {
 	position: absolute;
-	bottom: 10px;
+	bottom: 18px;
 	display: none;
 	font-family: 'Roboto Slab', serif;
-	font-size: 1.3em;
+	font-size: 1.05em;
 	text-align: center;
-	width: 94%;
-    left: 4%;
+	width: 95%;
+    left: 2.8%;
 }
 .button-container
 {
