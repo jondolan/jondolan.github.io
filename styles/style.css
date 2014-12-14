@@ -313,11 +313,11 @@ body
 	}
 	#about
 	{
-		font-size: 1em;
+		font-size: .8em;
         width: 94%;
         margin-left: 0;
         left: 3.5%;
-        bottom: 2%;
+        bottom: 4%;
 	}
 	#circle
 	{
