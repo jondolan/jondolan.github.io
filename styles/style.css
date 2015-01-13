@@ -133,7 +133,7 @@ body
 	transform: rotate(-25deg);
 	-ms-transform: rotate(-25deg);
 }
-#robotics-container
+#blog-container
 {
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
@@ -151,38 +151,38 @@ body
 	transform: rotate(50deg);
 	-ms-transform: rotate(50deg);
 }
-#twitter-button img
-{
-	height: 60%;
-	position: relative;
-	top: 20%;
-}
-#github-button img
+#twitter-button div, #github-button div, #blog-button div, #five-button div, #email-button div
 {
 	height: 80%;
+	background-image: url("../images/icons.png");
+	background-repeat: no-repeat;
+	overflow: hidden;
 	position: relative;
-	top: 10%;
 }
-#robotics-button img
+#twitter-button div
 {
-	height: 80%;
-	position: relative;
-	top: 6%;
-	right: .5%;
+	background-position: 8px 0px;
+	top: 10px;
 }
-#five-button img
+#github-button div
 {
-	height: 90%;
-	position: relative;
-	top: 5%;
-	left: 1%;
+	background-position: -63px 0px;
+	top: 7px;
 }
-#email-button img
+#blog-button div
 {
-	height: 80%;
-	position: relative;
-	left: -12.5%;
-	top: 10%;
+	background-position: -140px 0px;
+	top: 9px;
+}
+#five-button div
+{
+	background-position: -216px 0px;
+	top: 6px;
+}
+#email-button div
+{
+	background-position: -289px 0px;
+	top: 7px;
 }
 .button
 {
@@ -194,6 +194,7 @@ body
 	-moz-border-radius: 50%; 
 	z-index: 100;
 	position: relative;
+	overflow: hidden;
 }
 .button:hover
 {
@@ -300,12 +301,39 @@ body
 		transform: rotate(37deg);
 		-ms-transform: rotate(37deg);
 	}
-	#email-button img
+	#twitter-button div, #github-button div, #blog-button div, #five-button div, #email-button div
 	{
 		height: 80%;
+		background-image: url("../images/icons.png");
+		background-size: 275px 44px;
+		background-repeat: no-repeat;
+		overflow: hidden;
 		position: relative;
-		right: 15%;
-		top: 11%;
+	}
+	#twitter-button div
+	{
+		background-position: 7px 0px;
+		top: 7px;
+	}
+	#github-button div
+	{
+		background-position: -49px 0px;
+		top: 5px;
+	}
+	#blog-button div
+	{
+		background-position: -110px 0px;
+		top: 7px;
+	}
+	#five-button div
+	{
+		background-position: -170px 0px;
+		top: 5px;
+	}
+	#email-button div
+	{
+		background-position: -227px 0px;
+		top: 6px;
 	}
 	#text
 	{
