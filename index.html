@@ -1,85 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name = "viewport" content = "user-scalable=no, width=device-width">
-	<meta name="description" content="Jon Dolan is a high school student who programs and runs for fun!">
-	<meta name="keywords" content="Jon, Dolan, Jon Dolan, high school programmers, web development">
-	<meta http-equiv="content-language" content="en">
-	<title>Jon Dolan - Portfolio</title>
-	<link rel = "icon" type="image/ico" href="favicon.ico">
-	<link rel="stylesheet" href="styles/style.css" type="text/css" />
-	<script type = "text/javascript" src = "scripts/script.js"></script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+---
+layout: default
+---
 
-		ga('create', 'UA-51448816-1', 'jondolan.me');
-		ga('send', 'pageview');
-	</script>
-</head>
+<section class="main-content">
 
-<body>
-<div id = "wrap">
-	<div id = "float"></div>
-	<div id = "container">
-	<span id = "twitter-container" class = "button-container">
-		<div id = "twitter-button" class = "button">
-			<a href = "https://twitter.com/jondolan3" title = "My twitter"><div></div></a>
-		</div>
-	</span>
-	<span id = "github-container" class = "button-container">
-		<div id = "github-button" class = "button">
-			<a href = "https://github.com/jondolan" title = "Check out my code"><div></div></a>
-		</div>
-	</span>
-	<span id = "blog-container" class = "button-container">
-		<div id = "blog-button" class = "button">
-			<a href = "http://blog.jondolan.me" title = "My blog - from astrophotography to robotics"><div></div></a>
-		</div>
-	</span>
-	<span id = "five-container" class = "button-container">
-		<div id = "five-button" class = "button">
-			<a href = "http://fiveswordgame.com" title = "Fives - a word strategy game I created from scratch"><div></div></a>
-		</div>
-	</span>
-	<span id = "email-container" class = "button-container">
-		<div id = "email-button" class = "button">
-			<a href = "mailto:jon@jondolan.me?subject=Hey Jon, I saw your website!" title="Get in touch!"><div></div></a>
-		</div>
-	</span>
-	<div id = "mouseout" ontouchstart="touchStart(event,'mouseout');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);" onmouseover = "moveDown(document.getElementById('image'));" onmouseout = "moveUp(document.getElementById('image'))"></div>
-	<div id = "circle">
-		<div id = "image"></div>
-		<div id = "text">
-			<h1>Jon Dolan</h1>
-		</div>
-        <div id = "mouse_over">Mouseover or swipe me down!</div>
-		<div id = "about">
-			High School Senior
-			<br />
-			Programmer, runner, outfielder
-			<br />
-			You'll find me listening to Muse 
-			<br /> 
-			or watching the stars
-			<br />
-            Checkout the bubbles to learn more about me
-			<br />
-            <br />
-			"Two possibilities exist:
-			<br />
-			Either we are alone in the Universe
-			<br />
-			or we are not.
-			<br />
-			Both are equally terrifying"
-			<br />
-			- Arthur C. Clarke
-		</div>
-	</div>
-	</div>
-</div>
-</body>
-</html>
+    {% for post in paginator.posts %}
+        <article class="module color-3">
+                <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+                <span class="category">{{ post.categories }}</span>
+                <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | split: '...more...' | first }}{% endif %}</p>
+        </article>
+    {% endfor %}
+
+    <div class="module pagination color-3">
+        {% if paginator.previous_page %}
+            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
+        {% endif %}
+
+        <span class="page_number">&mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;</span>
+
+        {% if paginator.next_page %}
+            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">Next</a>
+        {% endif %}
+    </div>
+
+</section>
+
+
