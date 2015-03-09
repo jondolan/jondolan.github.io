@@ -86,6 +86,11 @@ article p a {
   text-align: center;
 }
 
+.smalldate {
+    margin-top: -1.5em;
+    display: block;
+}
+
 /* ------------------------------------------------------------------------
 -  The header (or the left side part of the page). -
 -------------------------------------------------------------------------*/

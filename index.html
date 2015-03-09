@@ -8,8 +8,9 @@ layout: default
         <article class="module color-3">
                 <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
                 <span class="category">{{ post.categories }}</span>
+                <small class="smalldate">{{ post.date | date: "%A, %B %-d, %Y" }}</small>
                 <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | split: '...more...' | first }}{% endif %}</p>
-        </article>
+       </article>
     {% endfor %}
 
     <div class="module pagination color-3">
