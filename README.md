@@ -8,7 +8,7 @@ The following directories and their contents are copyright Jon Dolan 2015. Pleas
 
 	_posts/
 	images/
-	files/
+	files/ (copyright is maintained by original authors)
 
 
 Those three directories include all text posts and images on the website.
