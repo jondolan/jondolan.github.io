@@ -23,6 +23,11 @@
 -  The basics. -
 -------------------------------------------------------------------------*/
 
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
 html, body {
     background: #d1d1d1;
     font-family: 'Open Sans', sans-serif;
@@ -138,6 +143,10 @@ article p a {
     position: absolute;
     right: 0.75em;
     top: 0.75em;
+}
+
+.category a {
+    color: #ccc;
 }
 
 
@@ -329,4 +338,15 @@ table {
 
     .social { text-align: center; }
     .social li { display: block; width: 100%; }
+}
+
+/* ------------------------------------------------------------------------
+- CSS for the Topics page -
+-------------------------------------------------------------------------*/
+.category-label {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.category-post {
+    margin-left: 2em;
 }

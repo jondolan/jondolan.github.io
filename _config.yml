@@ -1,7 +1,10 @@
 # General
 name: "Jon's Blog"
 description: "From programming to space"
-url: http://jondolan.me
+url: http://www.jondolan.me
+
+# categories list so they show up in the order I want in the topics page
+categorylist: [projects, astrophotography, robotics, sports, other]
 
 markdown: redcarpet
 highlighter: pygments
@@ -19,3 +22,6 @@ homepage: "http://www.jondolan.me"
 ds2114s: '<a href="http://www.meade.com/product_pages/starter_scopes/ds_series/ds_2114.php" target="_blank">Meade DS-2114S telescope (1000mm focal length, focal ratio 8.8)</a>'
 procam: '<a href="http://procamapp.com/Home.html" target="_blank">ProCam 2 app</a>'
 slowcam: '<a href="https://itunes.apple.com/us/app/slow-shutter-cam-long-exposure/id357404131?mt=8" target="_blank">Slow Shutter Cam app</a>'
+
+gems:
+  - jekyll-sitemap
