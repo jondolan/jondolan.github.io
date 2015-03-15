@@ -1,20 +1,20 @@
 ---
 layout: post
 title:  "\"Spaceflight Now\" Launch Schedule Calendar"
+description: "Using PHP, I wrote a script to parse Spaceflight Now's Launch schedule page into a Google Calendar for use on my iPhone."
 date:   2015-02-17
 categories: projects
-tags: space
 ---
 
-Over my "Feburary break", one of the projects I decided to work on was a script that parses <a href = "http://spaceflightnow.com/" target="_blank">SpaceFlight Now's</a> <a href = "http://spaceflightnow.com/launch-schedule/" target="_blank">launch schedule</a> into a <a href="#googlecal">Google Calendar</a>....more...
+Over my "Feburary break", one of the projects I decided to work on was a script that parses <a href = "http://spaceflightnow.com/" target="_blank">Spaceflight Now's</a> <a href = "http://spaceflightnow.com/launch-schedule/" target="_blank">launch schedule</a> into a <a href="#googlecal">Google Calendar</a>.
 
-<a href = "http://spaceflightnow.com/" target="_blank">SpaceFlight Now</a> does a great job keeping the list of launches from around the world organized on one, updated page.
+<a href = "http://spaceflightnow.com/" target="_blank">Spaceflight Now</a> does a great job keeping the list of launches from around the world organized on one, updated page.
 
 I decided to write this in "PHP: Hypertext Preprocessor" (simply, PHP) and you can check out the code <a href = "https://github.com/jondolan/spaceflightnowcal" target="_blank">here</a>. I think 99% of people would choose python for this task, but I'm far more familiar with PHP, so that's the route I took.
 
 This project involved learning more about Google's APIs in order to upload the events to Google Calendar. I found the API documentation to be a little fragmented and at times outdated, but overall it was helpful. It could just be that I'm not use to working with other people's code!
 
-**Creating an algorithm to parse through data is not easy, especially other people's data.** SpaceFlight Now has some variation in how they display their data from launch to launch (things like "March 25/26" as a date due to timezone differences). There is nothing wrong with that - obviously their website is designed for people to view, not to be parsed for data. Plus, if they change their formatting slightly in the future, that could break my code completely! Regardless, this project was a fun challenge. And now I have a calendar with all the upcoming spaceflights on my phone!
+**Creating an algorithm to parse through data is not easy, especially other people's data.** Spaceflight Now has some variation in how they display their data from launch to launch (things like "March 25/26" as a date due to timezone differences). There is nothing wrong with that - obviously their website is designed for people to view, not to be parsed for data. Plus, if they change their formatting slightly in the future, that could break my code completely! Regardless, this project was a fun challenge. And now I have a calendar with all the upcoming spaceflights on my phone!
 
 The script is run nightly by my <a href = "http://www.raspberrypi.org/help/what-is-a-raspberry-pi/" target="_blank">Raspberry Pi</a> in order to keep the calendar up to date with the launches on the website. It works in two parts. First, it parses through all the webpage data, finds all the launches and their specific date and time, and then puts it all into a list (called an array). From there, the script polls for a list of events from the calendar, matches events in the two lists by title, compares the information in the matched events, and if any differences are found it updates the calendar event to reflect the changes. If no pre-existing calendar event with that title is found, then it creates a new event.
 
@@ -28,4 +28,4 @@ Other versions for use outside of Google Calendar: <a href = "https://www.google
 
 &nbsp;
 
-Thanks SpaceFlight Now for such a great resource!
+Thanks Spaceflight Now for such a great resource!

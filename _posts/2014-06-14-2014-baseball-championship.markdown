@@ -4,14 +4,14 @@ title:  "Baseball Class S State Champs!"
 description: "Portland High School baseball won the 2014 Class S State Championship with a score of 8-0."
 date:   2014-06-14
 categories: sports
-tags: news
 ---
 
 **Highlights from the 2014 CIAC Class S baseball championship game:**  
-Starting right fielder  
-2 RBIs on a hit to left field  
-Diving catch that almost led to a double play  
-TV interviews with two local news stations post game  
+
+* Starting right fielder  
+* 2 RBIs on a hit to left field  
+* Diving catch that almost led to a double play  
+* 2 post game interviews with local TV new stations
 
 
 **Articles and videos**:  

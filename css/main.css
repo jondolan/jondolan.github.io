@@ -320,7 +320,12 @@ table {
 -------------------------------------------------------------------------*/
 
 @media (max-width: 850px) {
-
+    
+    html {
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+    
     body { font-size: large; }
 
     .main-header,
@@ -329,7 +334,11 @@ table {
         width: 100%;
     }
 
-    .main-header .module { margin-left: 0; }
+    .main-header .module, .main-content .module { 
+        margin-left: .25em;
+        margin-right: .25em; 
+    }
+       
     .main-content .module { margin-top: 0; }
 
     nav { text-align: center; }

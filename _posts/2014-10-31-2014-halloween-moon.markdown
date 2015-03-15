@@ -3,7 +3,7 @@ layout: post
 title:  "First Quarter Halloween Moon"
 date:   2014-10-31
 categories: astrophotography
-tags: moon
+tags: ds2114s
 ---
 
 My first go at astrophotography had to be the moon, right?...more...

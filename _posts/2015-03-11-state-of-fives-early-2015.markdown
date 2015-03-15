@@ -3,7 +3,6 @@ layout: post
 title:  "State of \"Fives\""
 date:   2015-03-11
 categories: projects
-tags: fives
 ---
 
 The analytical data I've obtained from <a href="{{ site.fives }}" title="Fives Word Game" target="_blank">Fives Word Game</a> so far, with a focus on January and February of 2015....more...
@@ -14,15 +13,10 @@ I started collecting data on the page views of Fives on May 27th, 2014 and I sta
 **Between those dates and the end of 2014:**
 
 * 2,196 page views
-
 * 767 plays from 218 unique players
-
 * ~50% of plays were practice mode, ~34% classic, ~8% multiplayer and time trial each
-
 * ~75% of traffic was from a desktop computer, ~20% of traffic was from a mobile device, and ~4% of traffic was from a tablet
-
 * Chrome was responsible for ~75% of the traffic, Safari ~10% (including in-app browsers on mobile), IE ~9%, and Firefox ~3.5%
-
 * 98% of traffic originated from the United States, 5 other countries were represented
 
 
@@ -30,18 +24,12 @@ In 2015, I added the ability to track games more in-depth, with data on words gu
 **In January and February of 2015:**
 
 * 764 page views
-
 * 430 plays from 70 unique players
-
 * ~81% of plays were practice mode, 10% classic, ~4% multiplayer and time trial each
 * The overall win:loss ratio is about 3:1, about 4:1 for practice
-
 * The most popular words to guess are "phial" (16), "after" (14), "clean" (14), "leads" (10), and "quiet" (10)
-
 * ~86% of traffic was from a desktop computer, ~13% mobile, and ~1% tablet.
-
 * Chrome was responsible for ~86% of the traffic, Safari ~11% (including in-app browsers on mobile), IE ~2%, and Firefox ~1%
-
 * ~99% of the traffic originated from the United States, and ~1% from Canada
 
 &nbsp;
