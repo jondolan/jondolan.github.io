@@ -8,9 +8,7 @@ tags: iphone-tripod
 
 During my first year observing the <a href="http://en.wikipedia.org/wiki/Geminids" target="_blank">Geminid Meteor Shower</a>, I decided to snap a few pictures with just my <a href="{% post_url 2015-01-13-iphone-tripod-gear %}">iPhone attached to a tripod with a shoelace</a>....more... Through the {{ site.slowcam }}, I was able to capture what I feel to be a solid picture, for an iPhone.
 
-
-<a href = "{{ site.baseurl }}/images/orion-constellation/2014-12-13_1.png"><img class="center" alt="Orion Constellation" src="{{ site.baseurl }}/images/orion-constellation/2014-12-13_1s.png" /></a>
-<span class = "center">(Click for full size version)</span>
+<p class="center limited-image"><a class="no-decor" href="{{ site.baseurl }}/images/orion-constellation/2014-12-13_1.png"><img alt="Orion Constellation" src="{{ site.baseurl }}/images/orion-constellation/2014-12-13_1s.png" /></a></p>
 
 "Orion's Belt" - the widely known triplet of stars - are Alnitak, Alnilam, and Mintaka.
 

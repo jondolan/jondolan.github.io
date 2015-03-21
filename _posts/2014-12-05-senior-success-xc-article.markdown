@@ -17,6 +17,6 @@ The season's highlights include:
 * Second year of running in the State Opens
 
 
-<a href = "http://www.glcitizen.com/archives/2014/12-5-2014.pdf" target = "_blank">PDF from their website</a>
+<a href="http://www.glcitizen.com/archives/2014/12-5-2014.pdf" target="_blank">PDF from their website</a>
 
-<a href = "{{ site.baseurl }}/files/12-5-2014-rivereast-article.pdf" target = "_blank">PDF mirrored on my website</a>
+<a href="{{ site.baseurl }}/files/12-5-2014-rivereast-article.pdf" target="_blank">PDF mirrored on my website</a>

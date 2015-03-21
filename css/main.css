@@ -73,9 +73,9 @@ nav {
 
 
 article p a {
-    border-bottom: .125em solid #ccc;
+    border-bottom: .1em solid #ccc;
     display: inline;
-    padding: 0 0 .15em 0;
+    padding: 0;
 }
 
     article p a:hover, article p a:active {
@@ -89,6 +89,15 @@ article p a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.limited-image {
+    max-width: 75% !important;
+}
+
+.no-decor {
+    background: none !important;
+    border: none !important;
 }
 
 .smalldate {
@@ -322,8 +331,7 @@ table {
 @media (max-width: 850px) {
     
     html {
-        overflow: hidden;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     
     body { font-size: large; }
@@ -340,6 +348,10 @@ table {
     }
        
     .main-content .module { margin-top: 0; }
+    
+    .limited-image {
+        max-width: 100% !important;
+    }
 
     nav { text-align: center; }
     nav br { display: none; }
@@ -358,4 +370,12 @@ table {
 }
 .category-post {
     margin-left: 2em;
+}
+
+/* ------------------------------------------------------------------------
+- CSS for embedded tweets -
+-------------------------------------------------------------------------*/
+
+iframe.twitter-tweet {
+    margin: 15px auto 0 auto !important;
 }
