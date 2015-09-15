@@ -15,7 +15,7 @@ Here is a picture of my favorite tool, tmux. I have written an automation script
 
 &nbsp;
 
-In the mean time, I've started my academic career at the <a href = "http://www.gatech.edu">Georgia Institute of Technology</a> which has been an amazing experience so far.
+In the mean time, I've started my academic career at the <a href = "http://www.gatech.edu" target="_blank">Georgia Institute of Technology</a> which has been an amazing experience so far.
 
 I've joined the RoboJackets robotics team, IEEE professional engineering society for electiral and electronics engineers, and am on running club and the intramural ultimate frisbee team.
 
