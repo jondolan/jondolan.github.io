@@ -1,30 +1,104 @@
----
-layout: default
----
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en">
+	<meta name = "viewport" content = "user-scalable=no, width=device-width minimal-ui=1">
+	<meta name="description" content="Boilerplate Website Template v1.0!">
+	<meta name="keywords" content="boilerplate">
 
-<section class="main-content">
+	<title>Jon Dolan</title>
+    <script>
+	  // Enter Google Analytics Code here
+	</script>
 
-    {% for post in paginator.posts %}
-        <article class="module color-3">
-                <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-                <span class="category"><a href="{{ site.url }}/topics#{{ post.categories }}">{{ post.categories }}</a></span>
-                <small class="smalldate">{{ post.date | date: "%A, %B %-d, %Y" }}</small>
-                <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | split: '...more...' | first }}{% endif %}</p>
-       </article>
-    {% endfor %}
-
-    <div class="module pagination color-3">
-        {% if paginator.previous_page %}
-            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
-        {% endif %}
-
-        <span class="page_number">&mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;</span>
-
-        {% if paginator.next_page %}
-            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">Next</a>
-        {% endif %}
-    </div>
-
-</section>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="images/icon60.png">
+	<!--<link rel="apple-touch-icon" sizes="76x76" href="images/icon76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icon180.png">-->
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+	<link rel = "stylesheet" type = "text/css" href = "styles/main.css">
+	<script type = "text/javascript" src = "scripts/jquery.min.js"></script>
+  <script type = "text/javascript" src = "scripts/main.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Roboto Slab';
+      src: url('robotoslab-regular-webfont.eot');
+      src: url('robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  		 url('robotoslab-regular-webfont.ttf') format('truetype'),
+           url('robotoslab-regular-webfont.woff') format('woff'),
+           url('robotoslab-regular-webfont.svg#roboto_slabregular') format('svg');
+      font-weight: 400;
+      font-style: normal;
+
+    }
+    body {
+      background: #F5F3EE url('bg.png');
+      font-family: 'Roboto Slab', serif;
+    }
+    #main h2 {
+      font-size: 6em;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .logo {
+      height: 250px;
+      text-align: center;
+    }
+    .center {
+      text-align: center;
+    }
+    .no-pad {
+      margin: 0;
+      padding: 0;
+    }
+    .icons {
+      height: 60px;
+    }
+    .icon {
+      height: 50px;
+    }
+    .icon:hover {
+      border-bottom: 10px solid rgba(0, 0, 0, 0);
+    }
+    .icon-link {
+      margin-right: 25px;
+    }
+    .icon-link:last-of-type {
+      margin-right: 0;
+    }
+    .about {
+      font-size: 1.25em;
+    }
+
+  </style>
+</head>
+<body>
+
+<div id = "main">
+	<h2>Jon Dolan</h2>
+	<p class = "center no-pad"><img class = "logo" src = "me.png"></img></p>
+  <div class = "icons center">
+    <a class = "icon-link" href = "https://www.linkedin.com/in/jondolan" target = "_blank"><img class = "icon" src = "linkedin.png"></img></a>
+    <a class = "icon-link" href = "https://www.github.com/jondolan" target = "_blank"><img class = "icon" src = "github.png"></img></a>
+    <a class = "icon-link" href = "https://www.flickr.com/jondolan" target = "_blank"><img class = "icon" src = "flickr.png"></img></a>
+    <a class = "icon-link" href = "https://www.twitter.com/jondolan3" target = "_blank"><img class = "icon" src = "twitter.png"></img></a>
+  </div>
+  <p class = "about center">
+    My name is Jon Dolan and I'm a Georgia Tech student with a passion for space and computers.
+    <br />
+    <br />
+    Follow the above links to learn more about my skills and experience.
+  </p>
+</div>
+
+</body>
+</html>
