@@ -1,5 +1,6 @@
 {
     "name": "Jon Dolan",
+    "short_name": "Jon Dolan",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -7,12 +8,12 @@
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
             "type": "image/png"
         }
     ],
-    "theme_color": "#dddddd",
-    "background_color": "#dddddd",
+    "theme_color": "#172a53",
+    "background_color": "#172a53",
     "display": "standalone"
 }
