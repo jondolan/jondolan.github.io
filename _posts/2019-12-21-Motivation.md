@@ -27,6 +27,6 @@ With clear motivation ([start from why](https://www.ted.com/talks/simon_sinek_ho
 
 > The simplest solution is almost always the best
 
-So I built a blog from a [single template](https://github.com/jondolan/jondolan.github.io/blob/master/_layouts/default.html) of **pure, vanilla HTML/CSS**. In harmony with "designing a website to last", I am not minimizing my HTML because like Jeff Huang, I too can trace my computer science roots back to *right click->view source*. I'm writing [posts](https://github.com/jondolan/jondolan.github.io/blob/master/_posts_/2019-12-21-Motivation.md) in Markdown - a portable, straightforward ASCII based format without an expiration date or vendor lock-in. I'm giving consideration to page weight (benchmarks to come) and avoiding bloat by writing from scratch. And it only took me one evening to do it.
+So I built a blog from a [single template](https://github.com/jondolan/jondolan.github.io/blob/master/_layouts/default.html) of **pure, vanilla HTML/CSS**. In harmony with "designing a website to last", I am not minimizing my HTML because like Jeff Huang, I too can trace my computer science roots back to *right click->view source*. I'm writing [posts](https://github.com/jondolan/jondolan.github.io/blob/master/_posts/2019-12-21-Motivation.md) in Markdown - a portable, straightforward ASCII based format without an expiration date or vendor lock-in. I'm giving consideration to page weight (benchmarks to come) and avoiding bloat by writing from scratch. And it only took me one evening to do it.
 
 So, here we go.
