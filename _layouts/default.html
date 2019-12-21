@@ -149,6 +149,21 @@
     table tr th :last-child, table tr td :last-child {
       margin-bottom: 0;
     }
+    @media screen and (max-width: 642px) {
+      .sidebar > h4 {
+        display: none;
+      }
+      .sidebar > * > h1, .sidebar > p {
+        margin: 0;
+      }
+      .content > h2 {
+        text-align: center;
+      }
+      .sidebar {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
   </style>
 
 </head>
@@ -163,7 +178,7 @@
         <h4>photography</h4>
         <p class="font:emphasize">/ad astra/</p>
       </div>
-      <div>
+      <div class="content">
         <h2>{{page.title}}</h2>
         {{content}}
         <hr class="top-margin:large">
