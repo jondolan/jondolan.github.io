@@ -11,7 +11,7 @@ Side projects have always been a way I choose to spend a lot of my free time. Mo
 
 [Fives](https://github.com/jondolan/fives) is a [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game)) rip-off for five letter words, a true test of vocabulary and a prime example of how to avoid the concept of [*cascading* in CSS](https://github.com/jondolan/fives/blob/gh-pages/styles/style.css)...made back in the day that jQuery was still something to add to your project, not something to remove.
 
-My collegiate career directed my projects to be centered around my extra-curricular involvements in [IEEE robotics competitions](https://github.com/jondolan/arduino-pid), [teaching basic PID control](https://github.com/jondolan/tutorials/blob/master/controls/PWMthroughPID/FromPWMtoPID.md), [class projects](https://github.com/jondolan/auto-a-sketch), hackathons, and even on [lecturing about astrophotography](https://github.com/jondolan/tutorials/tree/master/astrophotography).
+During my collegiate career, projects centered around my extra-curricular involvements in [IEEE robotics competitions](https://github.com/jondolan/arduino-pid), [teaching basic PID control](https://github.com/jondolan/tutorials/blob/master/controls/PWMthroughPID/FromPWMtoPID.md), [class projects](https://github.com/jondolan/auto-a-sketch), hackathons, and even on [lecturing about astrophotography](https://github.com/jondolan/tutorials/tree/master/astrophotography).
 
 It also led to self-centered web design that focused more on being a resume and less on being useful. I no longer need a resume, so why not try to be useful?
 
