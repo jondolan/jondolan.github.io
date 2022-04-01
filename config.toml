@@ -1,0 +1,4 @@
+baseURL = 'https://jondolan.io/'
+languageCode = 'en-us'
+title = 'Jon Dolan'
+theme = "etch"
